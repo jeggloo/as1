@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+
+    <TextView
+    android:id="@+id/oldTweetsTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Fuel Log" />
+
+    <ListView
+    android:id="@+id/oldFuelLogList"
+    android:layout_width="fill_parent"
+    android:layout_height="263dp"
+    android:layout_weight="1"
+    android:scrollbars="vertical" >
+
+</ListView>
+
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:maxLength="10"
+        android:hint="Enter Date (yyyy-mm-dd)"/>
+
+
+
+    <EditText
+        android:id="@+id/station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Station"/>
+        android:ems="10"
+
+
+    <EditText
+        android:id="@+id/odo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter Odo Reading (km)"/>
+        android:ems="10"
+
+
+    <EditText
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Fuel Grade"/>
+        android:ems="10"
+
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter Fuel Amount(L)"/>
+        android:ems="10"
+
+    <EditText
+        android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter Fuel Unit Cost (c/L)"/><![CDATA[
+        android:ems="10"
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clear entry"
+        android:id="@+id/eclear"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+    android:id="@+id/clear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="clear log" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:id="@+id/exit"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
